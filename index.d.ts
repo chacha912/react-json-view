@@ -88,6 +88,12 @@ export interface ReactJsonViewProps {
    */
   displayDataTypes?: boolean;
   /**
+   * set to false to remove brace and colon for object.
+   *
+   * Default: true
+   */
+  displayBraceColon?: boolean;
+  /**
    * set to false to remove quotes from keys (eg. "name": vs. name:)
    *
    * Default: true

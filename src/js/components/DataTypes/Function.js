@@ -69,9 +69,9 @@ export default class extends React.PureComponent {
                         class="function-collapsed"
                         style={{ fontWeight: 'bold' }}
                     >
-                        <span>{'{'}</span>
+                        {this.props.displayBraceColon && <span>{'{'}</span>}
                         <span {...Theme(props.theme, 'ellipsis')}>...</span>
-                        <span>{'}'}</span>
+                        {this.props.displayBraceColon && <span>{'}'}</span>}
                     </span>
                 </span>
             );

@@ -347,6 +347,7 @@ describe('<JsonObject />', function () {
                 shouldCollapse={() => false}
                 quotesOnKeys={true}
                 indentWidth={1}
+                displayBraceColon={true}
             />
         );
         expect(wrapper.text()).to.equal('"":{"a":"a""b":"b""c":"c""d":"d"}');
@@ -369,6 +370,7 @@ describe('<JsonObject />', function () {
                 shouldCollapse={() => false}
                 quotesOnKeys={true}
                 indentWidth={1}
+                displayBraceColon={true}
             />
         );
         expect(wrapper.text()).to.equal('"":{"d":"d""b":"b""a":"a""c":"c"}');

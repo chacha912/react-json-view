@@ -48,6 +48,7 @@ class ReactJsonView extends React.PureComponent {
         enableClipboard: true,
         displayObjectSize: true,
         displayDataTypes: true,
+        displayBraceColon: true,
         onEdit: false,
         onDelete: false,
         onAdd: false,
