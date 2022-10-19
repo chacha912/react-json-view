@@ -101,6 +101,52 @@ export class ArrowRight extends React.PureComponent {
                         paddingLeft: '2px',
                         verticalAlign: 'top'
                     }}
+                    viewBox="0 0 15 15"
+                    fill="currentColor"
+                >
+                    <path d="M0 14l6-6-6-6z"></path>
+                </svg>
+            </span>
+        );
+    }
+}
+
+export class ArrowDown extends React.PureComponent {
+    render() {
+        const { props } = this;
+        const { style, ...rest } = props;
+
+        return (
+            <span {...rest}>
+                <svg
+                    style={{
+                        ...getIconStyle(style).style,
+                        paddingLeft: '2px',
+                        verticalAlign: 'top'
+                    }}
+                    viewBox="0 0 15 15"
+                    fill="currentColor"
+                >
+                    <path d="M0 5l6 6 6-6z"></path>
+                </svg>
+            </span>
+        );
+    }
+}
+
+export class ArrowRightSmall extends React.PureComponent {
+    render() {
+        const { props } = this;
+        const { style, ...rest } = props;
+
+        return (
+            <span {...rest}>
+                <svg
+                    style={{
+                        ...getIconStyle(style).style,
+                        paddingLeft: '2px',
+                        verticalAlign: 'top'
+                    }}
                     viewBox="0 0 12 12"
                     xmlns="http://www.w3.org/2000/svg"
                 >
@@ -116,7 +162,7 @@ export class ArrowRight extends React.PureComponent {
     }
 }
 
-export class ArrowDown extends React.PureComponent {
+export class ArrowDownSmall extends React.PureComponent {
     render() {
         const { props } = this;
         const { style, ...rest } = props;
