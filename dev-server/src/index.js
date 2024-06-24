@@ -86,6 +86,7 @@ ReactDom.render(
                 src.constructor &&
                 src.constructor.name === 'Moment'
             }
+            selectOnFocus
         />
 
         <br />
@@ -169,6 +170,13 @@ ReactDom.render(
             name="large_array"
             groupArraysAfterLength={50}
             src={getExampleJson4()}
+        />
+
+        {/* Name as colored react component */}
+        <JsonViewer
+            collapsed
+            name={<span style={{color: "red", fontWeight: 800}}>React Element as name</span>}
+            src={getExampleJson2()}
         />
     </div>,
     document.getElementById('app-container')

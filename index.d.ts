@@ -12,7 +12,7 @@ export interface ReactJsonViewProps {
    *
    * Default: "root"
    */
-  name?: string | null | false;
+  name?: React.JSX.Element | string | null | false;
   /**
    * RJV supports base-16 themes. Check out the list of supported themes in the demo.
    * A custom "rjv-default" theme applies by default.
@@ -88,6 +88,12 @@ export interface ReactJsonViewProps {
    */
   displayDataTypes?: boolean;
   /**
+   * When set to true, the index of the elements prefix values
+   *
+   * Default: true
+   */
+  displayArrayKey?: boolean;
+  /**
    * set to false to remove brace and colon for object.
    *
    * Default: true
@@ -147,6 +153,18 @@ export interface ReactJsonViewProps {
    * Default: null
    */
   defaultValue?: TypeDefaultValue | TypeDefaultValue[] | null;
+  /**
+   * Whether to select the textarea contents on edit
+   *
+   * Default: false
+   */
+  selectOnFocus?: boolean;
+  /**
+   * The key modifier to be combined with a click on JSON values to edit them
+   *
+   * Default: (e) => e.metaKey || e.ctrlKey
+   */
+  keyModifier?: (event: Event, type: 'edit' | 'submit') => boolean;
 }
 
 export interface OnCopyProps {
