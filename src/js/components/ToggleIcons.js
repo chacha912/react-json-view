@@ -7,7 +7,9 @@ import {
   SquareMinus,
   SquarePlus,
   ArrowRight,
-  ArrowDown
+  ArrowDown,
+  ArrowDownSmall,
+  ArrowRightSmall
 } from './icons'
 
 export function ExpandedIcon (props) {
@@ -20,6 +22,10 @@ export function ExpandedIcon (props) {
     case 'square':
       return (
         <SquareMinus {...Theme(theme, 'expanded-icon')} class='expanded-icon' />
+      )
+    case 'arrow':
+      return (
+        <ArrowDownSmall {...Theme(theme, 'expanded-icon')} class='expanded-icon' />
       )
     default:
       return (
@@ -41,6 +47,13 @@ export function CollapsedIcon (props) {
     case 'square':
       return (
         <SquarePlus
+          {...Theme(theme, 'collapsed-icon')}
+          class='collapsed-icon'
+        />
+      )
+    case 'arrow':
+      return (
+        <ArrowRightSmall
           {...Theme(theme, 'collapsed-icon')}
           class='collapsed-icon'
         />

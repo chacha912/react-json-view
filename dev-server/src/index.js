@@ -64,6 +64,8 @@ ReactDom.render(
         return false
       }}
       defaultValue=''
+      iconStyle='arrow'
+      displayBraceColon={false}
     />
 
     <br />
